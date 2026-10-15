@@ -1,0 +1,63 @@
+@mixin pmw{
+    padding: 8px;
+    margin: 0px 20px;
+    width:100% ;
+}
+@mixin hw{
+    height: 30px;
+    width: 200px;
+}
+@mixin dja{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.footer{
+    background:linear-gradient(purple,black);
+    color: white;
+    @include dja();
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+}
+.left-footer{
+    @include dja();
+    height: 180px;
+    width:100% ;
+    font-size:30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.right-footer{
+    height: 230px;
+    margin-left:20px;
+    margin-right:20px;
+    width:100% ;
+}    
+.right-footer input{
+    border-radius:5px;
+    border-color: white;
+    @include hw()
+}  
+.right-footer textarea{
+    border-radius:5px;
+    border-color: white;
+    @include hw()   
+}   
+.right-footer button {
+        background-color:red;
+        border-radius: 5px;
+        color: white;
+        @include hw()  
+}
+.center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 160px;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 40px;
+    width:100% ;
+}
+

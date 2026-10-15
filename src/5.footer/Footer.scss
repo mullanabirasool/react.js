@@ -1,0 +1,53 @@
+@mixin pmw{
+    padding: 8px;
+    margin: 0px 20px;
+    width:100% ;
+}
+@mixin hw{
+    height: 30px;
+    width: 200px;
+}
+@mixin dja{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.footer{
+    background:linear-gradient(black);
+    color: white;
+    @include dja();
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+}
+.left-footer{
+    @include dja();
+    height: 180px;
+    width:100% ;
+    font-size:30px;
+}
+.right-footer{
+    height: 230px;
+    @include pmw();
+}    
+.right-footer input{
+    border-radius:5px;
+    @include hw()
+}  
+.right-footer textarea{
+    border-radius:5px;
+    @include hw()   
+}   
+.right-footer button {
+        background-color:red;
+        border-color: white;
+        color: white;
+        @include hw()  
+}
+.center{
+    display: flex;
+    justify-content:center;
+    height: 160px;
+    @include pmw();
+}
+

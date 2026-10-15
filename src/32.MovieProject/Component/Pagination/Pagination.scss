@@ -1,0 +1,36 @@
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  // Styling for the buttons
+  button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #357ab8;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  // Styling for the page number
+  span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    min-width: 2rem;
+    text-align: center;
+  }
+}

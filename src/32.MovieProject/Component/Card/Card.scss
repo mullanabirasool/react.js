@@ -1,0 +1,92 @@
+.Trending-movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px
+}
+
+.popular-movies {
+  padding: 32px; // 2rem → 32px
+
+  &-title {
+    font-size: 32px; // 2rem → 32px
+    font-weight: 700;
+    margin-bottom: 24px; // 1.5rem → 24px
+    // text-align: center;
+    color: #222;
+  }
+
+  &-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; // 1.5rem → 24px
+  }
+}
+
+.card {
+  width: 200px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 6px; // 1rem → 16px
+  position: relative; // allow absolute positioning inside
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+
+  &-Poster_path {
+    margin-bottom: 12px; // 0.75rem → 12px
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &-Original_title {
+    font-size: 16px; // 1rem → 16px
+    font-weight: 600;
+    margin-top: 8px; // 0.5rem → 8px
+    color: #333;
+    transition: color 0.3s ease;
+
+    .card:hover & {
+      color: #0077cc;
+    }
+  }
+
+  &-Release_date {
+    font-size: 14px; // 0.85rem → ~14px
+    color: #666;
+    margin-top: 4px; // 0.25rem → 4px
+  }
+
+  &-Vote_average {
+    position: absolute; // move to top-right
+    top: 9px;
+    right: 12px;
+    background:white ;
+    color: #666;
+    font-size: 15px; // 0.9rem → ~15px
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 10px;
+    
+    transition: background 0.3s ease;
+
+    .card:hover & {
+      background: #21d07a; // highlight rating on hover
+    }
+  }
+}

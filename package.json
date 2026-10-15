@@ -1,0 +1,42 @@
+{
+  "name": "react14.0",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "axios": "^1.19.0",
+    "firebase": "^12.17.0",
+    "infinite-scroll": "^5.0.0",
+    "json-server": "^1.0.0-beta.15",
+    "less": "^4.7.0",
+    "nanoid": "^6.0.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-icons": "^5.7.0",
+    "react-loading-skeleton": "^3.5.0",
+    "react-player": "^3.4.0",
+    "react-router-dom": "^7.18.2",
+    "react-youtube": "^10.1.0",
+    "saas": "^1.0.0",
+    "screenfull": "^6.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "vite": "^8.1.1"
+  }
+}

@@ -1,0 +1,31 @@
+.project{
+    background-color: purple;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+.subcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 300px;
+    border-radius: 5px;
+    background-color:rgb(92, 0, 92) ;
+    gap:10px;
+}
+
+.subcard h4{
+    color: red;
+   font-size: 20px;
+}
+.pname{
+   margin-left: 10px;
+}
+
+

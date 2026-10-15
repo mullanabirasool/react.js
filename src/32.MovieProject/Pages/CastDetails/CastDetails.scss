@@ -1,0 +1,176 @@
+.cast-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.cast-title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 25px;
+}
+
+
+// CAST GRID
+.movie-cast-container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+
+// CAST CARD
+.cast-card {
+  min-width: 0;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.14);
+  }
+}
+
+
+// CAST IMAGE
+.cast-image {
+  width: 100%;
+  height: 250px;
+
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.3s ease;
+  }
+}
+
+
+// ACTOR NAME
+.cast-card h3 {
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  margin: 12px 10px 5px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+// CHARACTER
+.cast-card p {
+  color: #aaaaaa;
+
+  font-size: 13px;
+
+  margin: 0 10px 15px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+// =====================================
+// TABLET
+// =====================================
+
+@media (max-width: 1100px) {
+
+  .movie-cast-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .cast-image {
+    height: 230px;
+  }
+}
+
+
+// =====================================
+// TABLET SMALL
+// =====================================
+
+@media (max-width: 900px) {
+
+  .movie-cast-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .cast-image {
+    height: 220px;
+  }
+}
+
+
+// =====================================
+// MOBILE
+// =====================================
+
+@media (max-width: 600px) {
+
+  .cast-section {
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+
+  .cast-title {
+    font-size: 24px;
+  }
+
+  .movie-cast-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .cast-image {
+    height: 240px;
+  }
+}
+
+
+// =====================================
+// SMALL MOBILE
+// =====================================
+
+@media (max-width: 400px) {
+
+  .movie-cast-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .cast-image {
+    height: 200px;
+  }
+
+  .cast-card h3 {
+    font-size: 13px;
+  }
+
+  .cast-card p {
+    font-size: 11px;
+  }
+}

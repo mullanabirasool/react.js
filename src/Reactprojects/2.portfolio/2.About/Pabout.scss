@@ -1,0 +1,67 @@
+.about{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:10px ;
+    background-color:purple;
+    color: white;
+    gap:40px
+    
+}
+.left-about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  height:300px;
+  width:250px;
+  background-color: rgb(92, 0, 92);
+  margin-left: 20px;
+  border-radius: 100px;
+}
+.right-about{
+    height: auto;
+    width: 500px;
+}
+.certificates{
+    height: 80px;
+    width:100%;
+    background-color: purple;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.welcome{
+     background-color:white;
+     color:purple;
+     border-radius: 7px;
+     height: 20px;
+     width: 105px;
+    }
+.btn1{
+    height:30px;
+    width:105px ;
+    border-radius: 5px;
+    border-color: black;
+    background-color:rgb(230, 35, 35);
+    color: white;
+}    
+.btn2{
+    height:30px;
+    width:105px ;
+    border-radius: 5px;
+    border-color: black;
+    background-color:rgb(85, 83, 83);
+    color: white;
+}    
+
+.left-about img{
+    width: 100%px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100px;
+}

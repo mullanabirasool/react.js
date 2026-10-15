@@ -1,0 +1,56 @@
+.Home {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;   /* stack content vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;   /* cleaner borders */
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+table th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+table tr:hover {
+  background: #fdf2e9;   /* subtle hover effect */
+}
+
+button {
+  background: orange;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  width: 100px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: darkorange;
+}

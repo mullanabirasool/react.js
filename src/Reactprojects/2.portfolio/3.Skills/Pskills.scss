@@ -1,0 +1,43 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    background-color: purple;
+    color: white;
+    height: 300px;
+    width: 100%;
+}
+.pcard{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.name1{
+    color:white;
+    margin-top: 10px;
+}
+.name{
+  background-color:rgb(92, 0, 92); 
+  border-radius: 5px; 
+  width: 150px; 
+}
+.card{
+    height: 80px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border-color: rgb(92, 0, 92);
+    background-color:rgb(92, 0, 92);
+    color: white;
+    left: 10px;
+   
+}
+.card h3{
+    color: red;
+}
